@@ -1,0 +1,23 @@
+<!DOCTYPE html> <!-- Menandakan bahwa ini adalah dokumen HTML5 -->
+<html lang="en"> <!-- Elemen pembuka untuk halaman HTML dengan bahasa Inggris-->
+<head> <!-- Elemen yang berisi metadata untuk halaman -->
+    <meta charset="UTF-8"> <!-- enentukan encoding karakter untuk halaman -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk responsivitas -->
+    <title>Home Page</title> <!-- Menentukan judul halaman di tab browser -->
+    <link rel="stylesheet" href="/static/styles.css">  <!-- Menyisipkan stylesheet eksternal -->
+</head> <!-- Menutup bagian head-->
+<body> <!-- Elemen pembuka untuk tubuh halaman -->
+    <div class="container"> <!-- Elemen pembungkus untuk konten utama dengan kelas 'container' -->
+        <h2>Welcome to ghina home page!!!</h2>  <!-- Heading dengan teks 'Welcome to ghina home page!!!' -->
+        <div class="name-container"> <!-- Elemen dengan kelas 'name-container' untuk menampilkan nama -->
+            Halo, {{ name }}  <!--  Menampilkan nama yang diterima dari server dengan template variable 'name' -->
+        </div> <!-- Menutup elemen dengan kelas 'name-container' -->
+        <div class="age-container"> <!--  Elemen dengan kelas 'age-container' untuk menampilkan usia -->
+            you're {{ age }}, right?  <!-- Menampilkan usia yang diterima dari server dengan template variable 'age' -->
+        </div> <!-- # Menutup elemen dengan kelas 'age-container' -->
+        <form action="/back" method="get"> <!--  Formulir yang mengirim data ke route '/back' dengan metode GET -->
+            <button type="submit">Back to Login Page</button>  <!-- Tombol untuk mengirim formulir -->
+        </form> <!-- Menutup elemen form -->
+    </div> <!-- Menutup elemen dengan kelas 'container' -->
+</body> <!-- Menutup elemen body-->
+</html> <!--  Menutup elemen html -->

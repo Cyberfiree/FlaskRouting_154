@@ -1,0 +1,92 @@
+body {  /** Menyasar elemen body **/
+    font-family: Arial, sans-serif;  /** Mengatur font untuk seluruh halaman **/
+    background: linear-gradient(to bottom, #f47dbc, #ffffff);  /** Menetapkan latar belakang gradien **/
+    display: flex;  /** Menggunakan flexbox untuk layout **/
+    justify-content: center;  /** Mengatur konten agar terpusat secara horizontal **/
+    align-items: center;  /** Mengatur konten agar terpusat secara vertikal **/
+    height: 100vh;  /** Mengatur tinggi halaman agar penuh dengan viewport **/
+    margin: 0;  /** Menghapus margin default **/
+}
+
+.container {  /** Menyasar elemen dengan kelas 'container' **/
+    background: #ffffff;  /** Menetapkan latar belakang putih **/
+    border: 2px solid #fe6bb9;  /** Menetapkan border dengan warna ungu muda **/
+    border-radius: 10px;  /** Membulatkan sudut border **/
+    padding: 50px;  /** Memberikan padding dalam konten **/
+    width: 500px;  /** Menetapkan lebar container **/
+    text-align: center;  /** Mengatur teks agar terpusat **/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /** Menambahkan bayangan untuk efek kedalaman **/
+    transition: all 0.3s ease;  /** Menambahkan transisi untuk efek hover **/
+}
+
+.container:hover {  /** Menyasar elemen dengan kelas 'container' saat di-hover **/
+    transform: translateY(-5px);  /** Menggeser container sedikit ke atas saat di-hover **/
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  /** Membuat bayangan lebih besar saat di-hover **/
+}
+
+h2 {  /** Menyasar elemen h2 **/
+    color: #f47dbc;  /** Mengatur warna teks **/
+    margin-bottom: 20px;  /** Memberikan jarak bawah **/
+    font-family: 'Comic Sans MS', cursive, sans-serif;  /** Mengatur font khusus **/
+}
+
+label {  /** Menyasar elemen label **/
+    display: block;  /** Mengatur label menjadi blok agar berada pada baris baru **/
+    margin-bottom: 10px;  /** Memberikan jarak bawah **/
+    font-weight: bold;  /** Mengatur teks label menjadi tebal **/
+    text-align: left;  /** Mengatur teks agar rata kiri **/
+}
+
+input[type="text"],  /** Menyasar input dengan tipe text **/
+input[type="number"] {  /** Menyasar input dengan tipe number **/
+    width: 100%;  /** Membuat input memenuhi lebar kontainer **/
+    padding: 8px;  /** Memberikan padding pada input **/
+    margin-bottom: 20px;  /** Memberikan jarak bawah **/
+    border: 1px solid #ccc;  /** Menambahkan border dengan warna abu-abu **/
+    border-radius: 5px;  /** Membulatkan sudut border **/
+}
+
+button {  /** Menyasar elemen tombol **/
+    background: #f47dbc;  /** Menetapkan warna latar belakang tombol **/
+    color: white;  /** Menetapkan warna teks tombol **/
+    border: none;  /** Menghapus border tombol **/
+    padding: 10px 50px;  /** Memberikan padding pada tombol **/
+    border-radius: 5px;  /** Membulatkan sudut tombol **/
+    cursor: pointer;  /** Mengubah kursor saat hover di tombol **/
+    margin-top: 1px;  /** Memberikan jarak atas pada tombol **/
+}
+
+button:hover {  /** Menyasar tombol saat di-hover **/
+    background: #000000;  /** Mengubah warna latar belakang tombol menjadi hitam **/
+}
+
+a {  /** Menyasar elemen anchor (tautan) **/
+    color: #000000;  /** Mengatur warna teks tautan **/
+    text-decoration: none;  /** Menghapus garis bawah pada tautan **/
+    display: block;  /** Mengubah tautan menjadi blok agar memiliki ukuran penuh **/
+    margin-top: 10px;  /** Memberikan jarak atas pada tautan **/
+}
+
+a:hover {  /** Menyasar tautan saat di-hover **/
+    text-decoration: underline;  /** Menambahkan garis bawah saat hover **/
+}
+
+.name-container,  /** Menyasar elemen dengan kelas 'name-container' **/
+.age-container {  /** Menyasar elemen dengan kelas 'age-container' **/
+    border: 2px solid #f47dbc;  /** Menambahkan border dengan warna ungu muda **/
+    border-radius: 5px;  /** Membulatkan sudut border **/
+    padding: 10px;  /** Memberikan padding dalam konten **/
+    margin: 10px 0;  /** Memberikan margin vertikal **/
+}
+
+.name-container {  /** Menyasar elemen dengan kelas 'name-container' **/
+    display: inline-block;  /** Menjadikan elemen inline-block agar sejajar **/
+    width: 45%;  /** Menetapkan lebar elemen menjadi 45% **/
+}
+
+.age-container {  /** Menyasar elemen dengan kelas 'age-container' **/
+    display: inline-block;  /** Menjadikan elemen inline-block agar sejajar **/
+    width: 30%;  /** Menetapkan lebar elemen menjadi 30% **/
+    text-align: center;  /** Mengatur teks agar terpusat **/
+    margin-bottom: 30px;  /** Memberikan jarak bawah **/
+}

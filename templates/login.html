@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!-- Menandakan bahwa ini adalah dokumen HTML5 -->
+<html lang="en"> <!-- Elemen pembuka untuk halaman HTML dan Menentukan bahasa dari halaman ini adalah bahasa Inggris -->
+<head> <!-- Elemen yang berisi metadata untuk halaman -->
+    <meta charset="UTF-8"> <!-- Menentukan encoding karakter untuk halaman -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport untuk responsivitas -->
+    <title>Login Page</title> <!-- Menentukan judul halaman di tab browser -->
+    <link rel="stylesheet" href="/static/styles.css">  <!-- Menyisipkan stylesheet eksternal -->
+</head> <!-- JMenutup bagian head -->
+<body> <!-- Elemen pembuka untuk tubuh halaman -->
+    <div class="container"> <!-- Elemen pembungkus untuk konten utama dengan kelas 'container' -->
+        <h2>Login to your account?!</h2>  <!-- Heading dengan teks 'Login to your account' -->
+        <form action="/home" method="post">  <!--Formulir yang mengirim data ke route '/home' dengan metode POST -->
+            <label for="name">Name :</label> <!-- Label untuk input dengan id 'name' -->
+            <input type="text" id="name" name="name" placeholder="Enter your name here!" required>  <!-- Input teks untuk nama -->
+            <label for="age">Age :</label> <!-- # Label untuk input dengan id 'age' -->
+            <input type="number" id="age" name="age" placeholder="Enter your age here!" required>  <!-- Input angka untuk usia -->
+            <button type="submit">Sign in</button>  <!-- Tombol untuk mengirimkan form -->
+        </form> <!-- J Menutup elemen form -->
+        <a href="/">Back to Home</a>  <!-- Tautan untuk kembali ke halaman utama -->
+    </div> <!-- Menutup elemen dengan kelas 'container' -->
+</body> <!-- Menutup elemen body-->
+</html> <!-- Menutup elemen html -->
